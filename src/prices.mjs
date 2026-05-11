@@ -27,7 +27,6 @@ function createApp(database) {
   function parseDate(dateString) {
     if (dateString) {
       return {
-        legacyDate: new Date(dateString),
         plainDate: Temporal.PlainDate.from(dateString),
       };
     }
